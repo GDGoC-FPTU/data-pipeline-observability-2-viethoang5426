@@ -8,7 +8,7 @@
 
 ## Mo ta
 
-(Mo ta ngan gon bai lab va nhung gi ban da lam)
+Trong bai lab nay, em da xay dung mot ETL pipeline don gian de doc du lieu tu file JSON, loai bo cac ban ghi khong hop le, ap dung he so giam gia 10% va luu ket qua ra file CSV. Em da them thong bao logging de hien thi so ban ghi hop le va so ban ghi bi loai, cung nhu them cot `processed_at` de quan sat thoi diem xu ly.
 
 ---
 
@@ -25,9 +25,8 @@ python solution.py
 ```
 
 ### Chay Agent Simulation (Stress Test)
-```bash
-# Mo ta cach ban chay thi nghiem Clean vs Garbage data
-```
+
+Su dung `agent_simulation.py` de so sanh ket qua voi du lieu sach va du lieu rac. File `experiment_report.md` luu lai nhan xet va ket luan cua em.
 
 ---
 
@@ -44,4 +43,4 @@ python solution.py
 
 ## Ket qua
 
-(Tom tat ket qua: bao nhieu records da xu ly, bao nhieu bi loai, v.v.)
+Pipeline da xu ly 3 ban ghi hop le va loai bo 2 ban ghi khong hop le (gia <= 0 hoac category rong). Ket qua duoc luu trong `processed_data.csv` va bao gom cot `discounted_price` va `processed_at`.
